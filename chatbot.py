@@ -176,26 +176,27 @@ body {
 .category-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px; /* Space between buttons */
-    margin-bottom: 20px; /* Space between buttons and chat box */
+    gap: 10px; 
+    margin-bottom: 20px; 
 }
 
 .category-btn {
     display: inline-block;
-    padding: 5px 10px; /* Adjust padding to make buttons fit content */
-    font-size: 13px; /* Adjust font size to fit content */
-    background-color: #007bff;
+    padding: 5px 10px; 
+    font-size: 13px; 
     color: white;
+    background-color: #007bff; 
     border: none;
     border-radius: 15px;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: background-color 0.3s ease;
 }
 
 .category-btn:hover {
-    background-color: #0056b3;
+    background-color: #66b3ff;
     transform: scale(1.05);
 }
+
 
 .category-container.fade-in {
     display: flex;
