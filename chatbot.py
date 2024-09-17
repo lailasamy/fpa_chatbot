@@ -87,7 +87,6 @@ def home():
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FP&A Chatbot</title>
     <style>
-        /* General styles for the body and chat container */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f0f4f8;
@@ -99,7 +98,6 @@ body {
     height: 100vh;
 }
 
-/* Styling for the chat container */
 .chat-container {
             max-width: 600px;
             width: 100%;
@@ -112,7 +110,6 @@ body {
             flex-direction: column;
             height: 80vh;
         }
-/* Styling for the chat box */
 .chat-box {
     flex-grow: 1;
     overflow-y: auto;
@@ -126,7 +123,6 @@ body {
     gap: 10px;
 }
 
-/* Styling for chat messages */
 .chat-box p {
     margin: 0;
     padding: 10px 15px;
@@ -135,27 +131,23 @@ body {
     word-wrap: break-word;
 }
 
-/* Styling for user messages */
 .chat-box .user {
     align-self: flex-end;
     background-color: #007bff;
     color: white;
 }
 
-/* Styling for bot messages */
 .chat-box .bot {
     align-self: flex-start;
     background-color: #e0ffe6;
     color: #333;
 }
 
-/* Styling for the input box */
 .input-box {
     display: flex;
     justify-content: space-between;
 }
 
-/* Styling for the input field */
 .input-box input {
     flex: 1;
     padding: 15px;
@@ -166,7 +158,6 @@ body {
     font-size: 16px;
 }
 
-/* Styling for the send button */
 .input-box button {
     padding: 15px;
     background-color: #007bff;
@@ -178,12 +169,10 @@ body {
     transition: background-color 0.3s;
 }
 
-/* Styling for button hover effect */
 .input-box button:hover {
     background-color: #0056b3;
 }
 
-/* Styles for the category buttons and container */
 .category-container {
     display: flex;
     flex-wrap: wrap;
@@ -203,20 +192,17 @@ body {
     transition: all 0.3s ease;
 }
 
-/* Styling for category buttons on hover */
 .category-btn:hover {
     background-color: #0056b3;
     transform: scale(1.05);
 }
 
-/* Style for the fade-in animation */
 .category-container.fade-in {
     display: flex;
     animation: fadeIn 0.8s ease-in-out;
 }
 
 
-/* Keyframes for fade-in animation */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -247,7 +233,6 @@ body {
     </div>
 
     <script>
-        // Automatically show category options after the bot greeting
         document.addEventListener("DOMContentLoaded", function() {
             setTimeout(function() {
                 document.getElementById('category-container').classList.add('fade-in');
