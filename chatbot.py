@@ -133,13 +133,13 @@ body {
 
 .chat-box .user {
     align-self: flex-end;
-    background-color: #007bff;
+    background-color: red;
     color: white;
 }
 
 .chat-box .bot {
     align-self: flex-start;
-    background-color: #e0ffe6;
+    background-color: 	#A9A9A9;
     color: #333;
 }
 
@@ -160,7 +160,7 @@ body {
 
 .input-box button {
     padding: 15px;
-    background-color: #007bff;
+    background-color: red;
     color: white;
     border: none;
     border-radius: 25px;
@@ -170,7 +170,7 @@ body {
 }
 
 .input-box button:hover {
-    background-color: #0056b3;
+    background-color: #8B0000;
 }
 
 .category-container {
@@ -185,7 +185,7 @@ body {
     padding: 5px 10px; 
     font-size: 13px; 
     color: white;
-    background-color: #007bff; 
+    background-color: red; 
     border: none;
     border-radius: 15px;
     cursor: pointer;
@@ -193,7 +193,7 @@ body {
 }
 
 .category-btn:hover {
-    background-color: #66b3ff;
+    background-color: #8B0000;
     transform: scale(1.05);
 }
 
@@ -202,6 +202,15 @@ body {
     display: flex;
     animation: fadeIn 0.8s ease-in-out;
 }
+
+.logo {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 100px; 
+    height: auto;
+}
+
 
 
 @keyframes fadeIn {
@@ -216,6 +225,8 @@ body {
     </style>
     </head>
     <body>
+    
+    <img src="{{ url_for('static', filename='Logo') }}" alt="Logo" class="logo">
 
     <div class="chat-container">
         <div class="chat-box" id="chat-box">
